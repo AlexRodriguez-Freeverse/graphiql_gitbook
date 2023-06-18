@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Encode a query for GraphiQL integration</h1>
+<h2>Paste the query in the textarea</h2>
+
+<textarea id="query" style="width:100%;" rows="45" value="Type your query here"></textarea>
+<br/><br/>
+<button onclick="myFunction()">Encode for GraphiQL</button>
+<br/>
+<p id="demo"></p>
+
+
+<script>
+
+function myFunction() {
+  let encoded = "https://dev.livingassets.io/" + encodeURI(document.getElementById("query").value).replaceAll("%0A", "%E7%E7");
+  document.getElementById("demo").innerHTML = encoded;
+}
+
+</script>
+
+</body>
+</html>

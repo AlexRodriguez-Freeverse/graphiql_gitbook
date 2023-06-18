@@ -1,0 +1,13 @@
+name: GraphiQL
+title: GraphiQL
+visibility: private
+description: 'It embeds a GraphiQL frame with a query that is set by parameter'
+script: src/index.tsx
+scopes: []
+blocks:
+  - id: embed
+    title: GraphiQL
+    description: Frame with a predefined query
+    urlUnfurl:
+          - https://dev.livingassets.io/**
+secrets: {}

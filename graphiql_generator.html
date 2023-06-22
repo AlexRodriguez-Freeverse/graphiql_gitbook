@@ -15,7 +15,7 @@
 <script>
 
 function myFunction() {
-  let encoded = "https://dev.livingassets.io/" + encodeURI(document.getElementById("query").value).replaceAll("%0A", "%E7%E7");
+  let encoded = "https://dev.livingassets.io/" + encodeURI(document.getElementById("query").value).replaceAll("%0A", "%E7%E7").replaceAll("#", "%23");
   document.getElementById("demo").innerHTML = encoded;
 }
 

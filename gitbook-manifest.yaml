@@ -1,5 +1,6 @@
 name: GraphiQL
 title: GraphiQL
+organization: aTIqskwiYfOSdjt7IOYP
 visibility: private
 description: 'It embeds a GraphiQL frame with a query that is set by parameter'
 script: src/index.tsx
